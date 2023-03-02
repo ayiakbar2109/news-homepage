@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="/dist/output.css">
   
   <title>Frontend Mentor | News homepage</title>
 </head>
@@ -31,66 +31,77 @@
   </section>
 
   <main class="mt-10">
+
+    <!-- Section Pertama -->
     <div class="mb-10">
       <img class="" src="/assets/images/image-web-3-mobile.jpg" alt="gambar apa ya" />
-      <header class="font-extrabold text-5xl mt-5">The Bright Future of Web 3.0?</header>
-      <p class="my-4 tracking-wide">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <button class="inline-block bg-red-400 h-14 w-48 tracking-widest text-white font-semibold" type="button">READ MORE</button>
+      <header class="font-extrabold text-5xl text-very-dark-blue mt-5">The Bright Future of Web 3.0?</header>
+      <p class="my-4 tracking-wide font-light">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+      <button class="inline-block bg-soft-red h-14 w-48 tracking-widest text-white font-semibold" type="button">READ MORE</button>
+    </div>
+
+    <!-- Section kedua -->
+    <div class="bg-very-dark-blue p-5 my-20">
+      <header class="text-4xl font-bold text-soft-orange">New</header>
+      <div class="border-b tracking-wide">
+        <header class="text-2xl text-off-white font-bold mt-8">Hydrogen VS Electric Cars</header> 
+        <p class="mt-2 mb-9 text-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <div class="border-b tracking-wide">
+        <header class="text-2xl text-off-white font-bold mt-8">The Downsides of AI Artistry</header> 
+        <p class="mt-2 mb-9 text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <div class="tracking-wide">
+        <header class="text-2xl text-off-white font-bold mt-8">Is VC Funding Drying Up?</header> 
+        <p class="mt-2 mb-5 text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
     </div>
     
-    <div class="bg-red-500 p-5">
-      <header class="text-4xl font-bold">New</header>
-      <div class="border-b tracking-wide">
-        <header class="text-2xl font-bold mt-8">Hydrogen VS Electric Cars</header> 
-        <p class="mt-2 mb-9">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    <div>
+      <!-- Artikel Pertama -->
+      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+        <div class="col-span-1 row-span-1">
+          <img class="w-full h-full" src="./assets/images/image-retro-pcs.jpg">
+        </div>
+        <div class="row-span-1 col-span-3">
+          <p class="text-3xl mb-3 text-grayish-blue font-bold">01</p>
+          <header class="text-xl font-extrabold mb-3 text-very-dark-blue">Reviving Retro Pcs</header>
+          <p class="font-thin">What hapens when old PCs are given modern upgrades?</p>
+        </div>
       </div>
-      <div class="border-b tracking-wide">
-        <header class="text-2xl font-bold mt-8">The Downsides of AI Artistry</header> 
-        <p class="mt-2 mb-9">What are the possible adverse effects of on-demand AI image generation?</p>
+
+      <!-- Artikel Kedua -->
+      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+        <div class="col-span-1 row-span-1">
+          <img class="w-full h-full" src="./assets/images/image-top-laptops.jpg">
+        </div>
+        <div class="row-span-1 col-span-3">
+          <p class="text-3xl mb-3 text-grayish-blue">02</p>
+          <header class="text-xl font-extrabold mb-3">Top 10 Laptops of 2022</header>
+          <p class="font-thin">Our best picks for various needs and budgets.</p>
+        </div>
       </div>
-      <div class="tracking-widest">
-        <header class="text-2xl font-bold mt-8">Is VC Funding Drying Up?</header> 
-        <p class="mt-2 mb-5">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      
+      <!-- Artikel ketiga -->
+      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+        <div class="col-span-1 row-span-1">
+          <img class="w-full h-full" src="./assets/images/image-gaming-growth.jpg">
+        </div>
+        <div class="row-span-1 col-span-3">
+          <p class="text-3xl mb-3 text-grayish-blue font-bold">03</p>
+          <header class="text-xl font-extrabold mb-3">The Growth of Gaming</header>
+          <p class="font-thin">How the pandemic has sparked fresh opportunities.</p>
+        </div>
       </div>
     </div>
-    
-    <div class="grid grid-rows-3 grid-flow-col gap-4">
-  <div class="row-span-3">01</div>
-  <div class="col-span-2">02</div>
-  <div class="row-span-2 col-span-2">03</div>
-  <div
-   class="row-span-2 col-span-2"></div>
-</div>
-    
   </main>
   
-
-  
-
-
-  
- 
-  
-
-  
-  
-
-
-  
-
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
   <script src="index.js"></script>
 </body>
 </html>
