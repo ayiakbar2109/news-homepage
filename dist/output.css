@@ -2421,11 +2421,6 @@ video {
   --soft-red: hsl(5, 85%, 63%);
 }
 
-a {
-  display: block;
-  transition: 0.3s;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;

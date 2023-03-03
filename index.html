@@ -17,11 +17,11 @@
   <div id="mySidepanel" class="fixed w-0 z-1 right-0 top-0 bg-off-white h-full overflow-hidden pt-20 pl-5 lg:invisible">
     <a href="javascript:void(0)" class="absolute top-5 right-5" onclick="closeNav()"><img class="w-auto"  src="/assets/images/icon-menu-close.svg"></a>
     <nav>
-      <a class="pb-5" href="#">Home</a>
-      <a class="pb-5" href="#">New</a>
-      <a class="pb-5" href="#">Popular</a>
-      <a class="pb-5" href="#">Trending</a>
-      <a class="pb-5" href="#">Categories</a>
+      <a class="block pb-5 text-xl" href="#">Home</a>
+      <a class="block pb-5 mt-5 text-xl" href="#new">New</a>
+      <a class="block pb-5 mt-5 text-xl" href="#popular">Popular</a>
+      <a class="block pb-5 mt-5 text-xl" href="#trending">Trending</a>
+      <a class="block pb-5 mt-5 text-xl" href="#categories">Categories</a>
     </nav>
 </div>
 
@@ -37,7 +37,7 @@
 </section>
   </div>
 
-  <main class=>
+  <main>
     <div class="mt-10 lg:grid lg:grid-cols-12 lg:grid-flow-col lg:gap-6">
       <div class="mb-10 lg:mb-0 lg:col-start-1 lg:col-span-8">
         <img class="md:w-full lg:h-5/6" src="/assets/images/image-web-3-mobile.jpg" alt="gambar apa ya" />
@@ -54,7 +54,7 @@
         
         
   
-        <div class="bg-very-dark-blue p-5 my-20 lg:col-span-4 lg:row-span-4 lg:my-0">
+      <div class="bg-very-dark-blue p-5 my-20 lg:col-span-4 lg:row-span-4 lg:my-0" id="new">
           <header class="text-4xl font-bold text-soft-orange md:text-6xl">New</header>
           <div class="border-b tracking-wide">
             <header class="text-2xl text-off-white font-bold mt-8 md:text-4xl">Hydrogen VS Electric Cars</header> 
@@ -86,11 +86,11 @@
         </div>
   
         <!-- Artikel Kedua -->
-        <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+        <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10" id="popular">
           <div class="col-span-1 row-span-1">
             <img class="w-full h-full md:w-3/4 lg:w-auto" src="./assets/images/image-top-laptops.jpg">
           </div>
-          <div class="row-span-1 col-span-3">
+          <div class="row-span-1 col-span-3" id="categories">
             <p class="text-3xl mb-3 text-grayish-blue md:text-5xl md:mb-6 lg:text-3xl lg:mb-3">02</p>
             <header class="text-xl font-extrabold mb-3 md:text-4xl md:mb-6 lg:text-xl lg:mb-3">Top 10 Laptops of 2022</header>
             <p class="font-thin md:text-lg lg:text-base">Our best picks for various needs and budgets.</p>
@@ -109,7 +109,6 @@
           </div>
         </div>
       </div>
-    </div>
 
   
   </main>
