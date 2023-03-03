@@ -10,6 +10,9 @@ module.exports = {
         "dark-grayish-blue": "var(--dark-grayish-blue)",
         "soft-orange": "var(--soft-orange)",
         "soft-red": "var(--soft-red)"
+      },
+      screens: {
+        "sm": "300px"
       }
     },
   },

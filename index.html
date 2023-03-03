@@ -10,96 +10,114 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 
-<body class="mx-5">
+<body class="mx-5 md:m-10">
 
-  <!-- Navigas Sidepannel -->
-  <div id="mySidepanel" class="fixed w-0 z-1 right-0 top-0 bg-white pt-5">
-    <div class="grid grid-row-7 grid-flow-rows h-full gap-5 ml-4">
-      <button href="javascript:void(0)" class="mb-5" onclick="closeNav()"><img src="/assets/images/icon-menu-close.svg"></button>
-      <a class="mt-5" href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
-    </div>
+  <div>
+    <!-- Navigas Sidepannel -->
+  <div id="mySidepanel" class="fixed w-0 z-1 right-0 top-0 bg-off-white h-full overflow-hidden pt-20 pl-5 lg:invisible">
+    <a href="javascript:void(0)" class="absolute top-5 right-5" onclick="closeNav()"><img class="w-auto"  src="/assets/images/icon-menu-close.svg"></a>
+    <nav>
+      <a class="pb-5" href="#">Home</a>
+      <a class="pb-5" href="#">New</a>
+      <a class="pb-5" href="#">Popular</a>
+      <a class="pb-5" href="#">Trending</a>
+      <a class="pb-5" href="#">Categories</a>
+    </nav>
+</div>
+
+<!-- Logo dan Toggle Icon Navigasi -->
+<section class="grid grid-cols-6 mt-5 mb-5 lg:grid-cols-10 lg:justify-items-stretch">
+  <a href="#" class="col-start-1" ><img class="w-full md:w-full lg:w-auto" src="/assets/images/logo.svg" alt="logo w"></a>
+  <button onclick="openNav()" class="col-start-6 row-start-2"><img class="w-full lg:invisible" src="/assets/images/icon-menu.svg"></button>
+    <a class="lg:text-xl lg:pt-6 lg:text-dark-grayish-blue sm:invisible md:invisible lg:visible lg:col-start-6 lg:row-start-1" href="#">Home</a>
+    <a class="lg:text-xl lg:pt-6 lg:text-dark-grayish-blue sm:invisible md:invisible lg:visible lg:col-start-7 row-start-1" href="#">New</a>
+    <a class="lg:text-xl lg:pt-6 lg:text-dark-grayish-blue sm:invisible md:invisible lg:visible lg:col-start-8 row-start-1" href="#">Popular</a>
+    <a class=" lg:text-xl lg:pt-6 lg:text-dark-grayish-blue sm:invisible md:invisible lg:visible lg:col-start-9 row-start-1" href="#">Trending</a>
+    <a class="lg:text-xl lg:pt-6 lg:text-dark-grayish-blue sm:invisible md:invisible lg:visible lg:col-start-10 row-start-1" href="#">Categories</a>
+</section>
   </div>
 
-  <!-- Logo dan Toggle Icon Navigasi -->
-  <section class="grid grid-cols-6 mt-5 mb-5">
-    <a href="#" class=""><img src="/assets/images/logo.svg" alt="logo w"></a>
-    <button onclick="openNav()" class="col-end-7"><img src="/assets/images/icon-menu.svg"></button>
-  </section>
-
-  <main class="mt-10">
-
-    <!-- Section Pertama -->
-    <div class="mb-10">
-      <img class="" src="/assets/images/image-web-3-mobile.jpg" alt="gambar apa ya" />
-      <header class="font-extrabold text-5xl text-very-dark-blue mt-5">The Bright Future of Web 3.0?</header>
-      <p class="my-4 tracking-wide font-light">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <button class="inline-block bg-soft-red h-14 w-48 tracking-widest text-white font-semibold" type="button">READ MORE</button>
-    </div>
-
-    <!-- Section kedua -->
-    <div class="bg-very-dark-blue p-5 my-20">
-      <header class="text-4xl font-bold text-soft-orange">New</header>
-      <div class="border-b tracking-wide">
-        <header class="text-2xl text-off-white font-bold mt-8">Hydrogen VS Electric Cars</header> 
-        <p class="mt-2 mb-9 text-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+  <main class=>
+    <div class="mt-10 lg:grid lg:grid-cols-12 lg:grid-flow-col lg:gap-6">
+      <div class="mb-10 lg:mb-0 lg:col-start-1 lg:col-span-8">
+        <img class="md:w-full lg:h-5/6" src="/assets/images/image-web-3-mobile.jpg" alt="gambar apa ya" />
       </div>
-      <div class="border-b tracking-wide">
-        <header class="text-2xl text-off-white font-bold mt-8">The Downsides of AI Artistry</header> 
-        <p class="mt-2 mb-9 text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+      <div class="lg:row-start-2 lg:col-span-4">
+        <header class="font-extrabold text-5xl text-very-dark-blue mt-5 md:text-6xl md:mb-5 lg:col-span-2 lg:row-span-2 lg:-mt-12">The Bright Future of Web 3.0?</header>
       </div>
-      <div class="tracking-wide">
-        <header class="text-2xl text-off-white font-bold mt-8">Is VC Funding Drying Up?</header> 
-        <p class="mt-2 mb-5 text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      <div class="lg:row-start-2 lg:col-start-5 lg:col-span-4 lg:-mt-12">
+        <p class="my-4 tracking-wide font-light md:text-3xl md:mb-8 lg:tracking-normal">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button class="inline-block bg-soft-red h-14 w-48 tracking-widest text-white font-semibold" type="button">READ MORE</button>
       </div>
-    </div>
     
-    <div>
-      <!-- Artikel Pertama -->
-      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
-        <div class="col-span-1 row-span-1">
-          <img class="w-full h-full" src="./assets/images/image-retro-pcs.jpg">
-        </div>
-        <div class="row-span-1 col-span-3">
-          <p class="text-3xl mb-3 text-grayish-blue font-bold">01</p>
-          <header class="text-xl font-extrabold mb-3 text-very-dark-blue">Reviving Retro Pcs</header>
-          <p class="font-thin">What hapens when old PCs are given modern upgrades?</p>
-        </div>
-      </div>
-
-      <!-- Artikel Kedua -->
-      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
-        <div class="col-span-1 row-span-1">
-          <img class="w-full h-full" src="./assets/images/image-top-laptops.jpg">
-        </div>
-        <div class="row-span-1 col-span-3">
-          <p class="text-3xl mb-3 text-grayish-blue">02</p>
-          <header class="text-xl font-extrabold mb-3">Top 10 Laptops of 2022</header>
-          <p class="font-thin">Our best picks for various needs and budgets.</p>
+        
+        
+        
+  
+        <div class="bg-very-dark-blue p-5 my-20 lg:col-span-4 lg:row-span-4 lg:my-0">
+          <header class="text-4xl font-bold text-soft-orange md:text-6xl">New</header>
+          <div class="border-b tracking-wide">
+            <header class="text-2xl text-off-white font-bold mt-8 md:text-4xl">Hydrogen VS Electric Cars</header> 
+            <p class="mt-2 mb-9 text-grayish-blue md:text-xl md:mt-4">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="border-b tracking-wide">
+            <header class="text-2xl text-off-white font-bold mt-8 md:text-4xl">The Downsides of AI Artistry</header> 
+            <p class="mt-2 mb-9 text-grayish-blue md:text-xl md:mt-4">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="tracking-wide">
+            <header class="text-2xl text-off-white font-bold mt-8 md:text-4xl">Is VC Funding Drying Up?</header> 
+            <p class="mt-2 mb-5 text-grayish-blue md:text-xl md:mt-4 md:mb-7">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
         </div>
       </div>
       
-      <!-- Artikel ketiga -->
-      <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
-        <div class="col-span-1 row-span-1">
-          <img class="w-full h-full" src="./assets/images/image-gaming-growth.jpg">
+     
+      <div class="lg:grid lg:grid-cols-3 lg:grid-flow-row lg:gap-6">
+        <!-- Artikel Pertama -->
+        <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+          <div class="col-span-1 row-span-1">
+            <img class="w-full h-full md:w-3/4 lg:w-auto" src="./assets/images/image-retro-pcs.jpg">
+          </div>
+          <div class="row-span-1 col-span-3">
+            <p class="text-3xl mb-3 text-grayish-blue font-bold md:text-5xl md:mb-6 lg:text-3xl lg:mb-3">01</p>
+            <header class="text-xl font-extrabold mb-3 text-very-dark-blue md:text-4xl md:mb-6 lg:text-xl lg:mb-3" >Reviving Retro Pcs</header>
+            <p class="font-thin md:text-lg lg:text-base">What hapens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
-        <div class="row-span-1 col-span-3">
-          <p class="text-3xl mb-3 text-grayish-blue font-bold">03</p>
-          <header class="text-xl font-extrabold mb-3">The Growth of Gaming</header>
-          <p class="font-thin">How the pandemic has sparked fresh opportunities.</p>
+  
+        <!-- Artikel Kedua -->
+        <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+          <div class="col-span-1 row-span-1">
+            <img class="w-full h-full md:w-3/4 lg:w-auto" src="./assets/images/image-top-laptops.jpg">
+          </div>
+          <div class="row-span-1 col-span-3">
+            <p class="text-3xl mb-3 text-grayish-blue md:text-5xl md:mb-6 lg:text-3xl lg:mb-3">02</p>
+            <header class="text-xl font-extrabold mb-3 md:text-4xl md:mb-6 lg:text-xl lg:mb-3">Top 10 Laptops of 2022</header>
+            <p class="font-thin md:text-lg lg:text-base">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        
+        <!-- Artikel ketiga -->
+        <div class="grid grid-rows-1 grid-cols-3 grid-flow-col gap-3 my-10">
+          <div class="col-span-1 row-span-1">
+            <img class="w-full h-full md:w-3/4 lg:w-auto" src="./assets/images/image-gaming-growth.jpg">
+          </div>
+          <div class="row-span-1 col-span-3">
+            <p class="text-3xl mb-3 text-grayish-blue font-bold md:text-5xl md:mb-6 lg:text-3xl lg:mb-3">03</p>
+            <header class="text-xl font-extrabold mb-3 md:text-4xl md:mb-6 lg:text-xl lg:mb-3">The Growth of Gaming</header>
+            <p class="font-thin md:text-lg lg:text-base">How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </div>
       </div>
     </div>
-  </main>
+
   
+  </main>
+
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Ayi Akbar Maulana</a>.
     </div>
   </footer>
   <script src="index.js"></script>
